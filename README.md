@@ -32,7 +32,7 @@ While the project was fun, and I got to try my hand with typescript and some
 more obscure patterns, I didn't get the performance I wanted out of the demo. I would
 be curious to see an example where socket and rendering were all accomplished in
 under 1 second. Whether or not I aced the "exam" or delivered something the
-employer was looking for, it was a fun experience making this little app and
+employer was looking for, it was a fun experience making this little app.
 
 I'm happy I got to play around with the technologies in the way that I did. This
 was my first time playing with typescript and I can see the utility, however, it
