@@ -1,0 +1,37 @@
+{
+  "name": "sockets-to-canvas",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm run build:server && npm run build:app",
+    "start": "node build/index.js",
+    "build:server": "tsc --project ./server/tsconfig.json --outDir build",
+    "build:app": "webpack --config webpack.config.js",
+    "watch:app": "webpack --mode development --config webpack.config.js --watch",
+    "watch:server": "nodemon --watch './server/**/*' -e ts,tsx --exec 'ts-node -P ./server/tsconfig.json' ./server/index.ts"
+  },
+  "keywords": [],
+  "author": "Spencer Snyder <sasnyde2@gmail.com> (https://spence-s.github.io)",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.5.2",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-send": "^5.0.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/koa-send": "^4.1.1",
+    "@types/koa": "^2.0.46",
+    "@types/koa-logger": "^3.1.0",
+    "@types/koa-router": "^7.0.31",
+    "@types/koa-static": "^4.0.0",
+    "nodemon": "^1.18.3",
+    "ts-loader": "^4.5.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
